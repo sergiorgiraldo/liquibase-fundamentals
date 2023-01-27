@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cd /Users/GK47LX/source/liquibase-fundamentals/migrations-h2
+
+liquibase --changeLogFile=changelog-h2.sql update
+liquibase tag v1
+liquibase --changeLogFile=changelog-h2.users.sql update
+liquibase tag v2
+liquibase --changeLogFile=changelog-h2.stores.sql update
+liquibase tag v3
