@@ -51,4 +51,4 @@ https://learn.liquibase.com/unit/view/id:2147
         
     > if you run rollback for file f3 and put tag 1, it will run  successfully, deleting whatever was on f3 **but it will not be on the state corresponding to tag 1**
     
-    3. Run with <code>liquibase --changeLogFile=changelog-h2.stores.sql rollback v2</code>
+3. Run with <code>liquibase --changeLogFile=changelog-h2.stores.sql rollback v2</code>
