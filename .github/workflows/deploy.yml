@@ -13,8 +13,8 @@ jobs:
         logLevel: INFO
     - name: Commit files # commit the output folder
       run: |
-      git config --local user.email "sergio@giraldo.com.br"
-      git config --local user.name "Sergio Rodrigues Giraldo"
-      git add .
-      git commit -m "Add changes"
-      git push origin HEAD:main
+        git config --local user.email "sergio@giraldo.com.br"
+        git config --local user.name "Sergio Rodrigues Giraldo"
+        git add .
+        git commit -m "Add changes"
+        git push origin HEAD:main
