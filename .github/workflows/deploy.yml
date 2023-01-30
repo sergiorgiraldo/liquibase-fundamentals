@@ -1,0 +1,12 @@
+name: Deploy project
+on: [push]
+jobs:
+  db:
+    steps:
+    - uses: actions/checkout@v3
+    - uses: liquibase-github-actions/update@v4.19.0
+      with:
+        changelogFile: "changelog1.sql"
+        url: "jdbc:sqlite:../../migrations-sqlite/example.db"
+        headless: true
+        logLevel: INFO
