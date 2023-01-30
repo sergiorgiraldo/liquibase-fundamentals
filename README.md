@@ -52,3 +52,9 @@ https://learn.liquibase.com/unit/view/id:2147
     > if you run rollback for file f3 and put tag 1, it will run  successfully, deleting whatever was on f3 **but it will not be on the state corresponding to tag 1**
     
 3. Run with <code>liquibase --changeLogFile=changelog-h2.stores.sql rollback v2</code>
+
+## Using liquibase hub
+
+1. Put <code>liquibase.hub.apiKey</code> and <code>liquibase.hub.mode</code> in the properties
+
+2. Register each changelog <code>liquibase --changelog-file=sample.sql register-changelog</code>
