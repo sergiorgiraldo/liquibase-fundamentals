@@ -11,7 +11,7 @@ jobs:
         url: "jdbc:sqlite:migrations-sqlite/example.db"
         headless: true
         logLevel: INFO
-    - name: Commit files # commit the output folder
+    - name: Commit files
       run: |
         git config --local user.email "sergio@giraldo.com.br"
         git config --local user.name "Sergio Rodrigues Giraldo"
