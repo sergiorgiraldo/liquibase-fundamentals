@@ -2,6 +2,7 @@ name: Deploy project
 on: [push]
 jobs:
   db:
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: liquibase-github-actions/update@v4.19.0
