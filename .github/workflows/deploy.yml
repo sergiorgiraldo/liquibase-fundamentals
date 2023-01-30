@@ -11,3 +11,11 @@ jobs:
         url: "jdbc:sqlite:migrations-sqlite/example.db"
         headless: true
         logLevel: INFO
+    - name: stage changed files
+      run: git add .
+    - name: commit changed files
+      run: git commit -m "Auto updating DB"
+    - name: fetch from master
+      run: git fetch origin main
+    - name: push code to master
+      run: git push origin HEAD:main
