@@ -8,6 +8,6 @@ jobs:
     - uses: liquibase-github-actions/update@v4.19.0
       with:
         changelogFile: "changelog1.sql"
-        url: "jdbc:sqlite:../../migrations-sqlite/example.db"
+        url: "jdbc:sqlite:migrations-sqlite/example.db"
         headless: true
         logLevel: INFO
